@@ -1,39 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>KTK Uploads – Share Your Music & Videos</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
-</head>
-<body>
-  <header>
-    <h1>🎶 KTK Upload Zone</h1>
-    <p>Upload & share your songs, videos, and files — free & forever</p>
-  </header>
+<main>
+  <h2>📤 Upload Your File</h2>
+  <input
+    type="hidden"
+    role="uploadcare-uploader"
+    data-public-key="demopublickey"
+    data-multiple="true"
+    data-clearable
+  />
+  <p>After uploading, copy the link and paste it in the list below.</p>
 
-  <main>
-    <h2>📤 Upload Your File</h2>
-    <input
-      type="hidden"
-      role="uploadcare-uploader"
-      data-public-key="demopublickey"
-      data-multiple="true"
-      data-images-only="false"
-      data-clearable
-    />
+  <h3>🎧 Recently Uploaded Music</h3>
+  <ul>
+    <li>
+      <strong>KTK ZM – Thank God</strong><br />
+      <audio controls>
+        <source src="https://your-song-link.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </li>
+    <li>
+      <strong>KTK ZM – No Limits</strong><br />
+      <audio controls>
+        <source src="https://another-song.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </li>
+  </ul>
 
-    <p>After uploading, copy the link to share or add it to your profile.</p>
-
-    <h3>💾 Recently Uploaded Files (Manual)</h3>
-    <ul>
-      <li><a href="#">your-song.mp3</a></li>
-      <li><a href="#">demo-video.mp4</a></li>
-    </ul>
-  </main>
-
-  <footer>
-    <p>Made by KTK ZM – Zambia Must Rise 🌍</p>
-  </footer>
-</body>
-  </html>
+  <h3>🎬 Recent Videos</h3>
+  <ul>
+    <li>
+      <strong>Music Video: Thank God</strong><br />
+      <video width="320" height="180" controls>
+        <source src="https://your-video-link.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li>
+  </ul>
+</main>
